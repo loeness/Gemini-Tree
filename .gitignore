@@ -1,0 +1,19 @@
+# Logs
+*.log
+
+# Node / tooling outputs
+node_modules/
+dist/
+build/
+coverage/
+
+# Archives
+*.zip
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/*
+!.vscode/extensions.json

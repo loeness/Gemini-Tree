@@ -1,0 +1,146 @@
+:root {
+  --pv-bg-1: #0f3f46;
+  --pv-bg-2: #1f6f78;
+  --pv-accent: #f6b25f;
+  --pv-soft: #fff4e8;
+  --pv-text: #132126;
+  --pv-white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 320px;
+  min-height: 248px;
+  font-family: "Sora", "Noto Sans SC", "Microsoft YaHei", sans-serif;
+  color: var(--pv-text);
+  background:
+    radial-gradient(100% 80% at 20% -10%, rgba(246, 178, 95, 0.34), transparent 54%),
+    linear-gradient(160deg, #fef8f0, #fffdf8);
+}
+
+.popup {
+  padding: 12px;
+}
+
+.popup-header {
+  padding: 12px;
+  border-radius: 14px;
+  color: var(--pv-white);
+  background: linear-gradient(135deg, var(--pv-bg-1), var(--pv-bg-2));
+  box-shadow: 0 10px 22px rgba(10, 44, 48, 0.26);
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+}
+
+.subtitle {
+  margin-top: 4px;
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+.status {
+  margin-top: 10px;
+  padding: 9px 10px;
+  border-radius: 10px;
+  background: var(--pv-soft);
+  border: 1px solid rgba(19, 33, 38, 0.12);
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.actions {
+  margin-top: 10px;
+  display: grid;
+  gap: 8px;
+}
+
+.llm-panel {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid rgba(19, 33, 38, 0.14);
+  background: rgba(255, 255, 255, 0.78);
+  display: grid;
+  gap: 8px;
+}
+
+.switch-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.field {
+  display: grid;
+  gap: 4px;
+}
+
+.field span {
+  font-size: 11px;
+  color: rgba(19, 33, 38, 0.8);
+}
+
+.field input {
+  border: 1px solid rgba(19, 33, 38, 0.18);
+  border-radius: 8px;
+  padding: 7px 8px;
+  font-size: 12px;
+  outline: none;
+}
+
+.field select {
+  border: 1px solid rgba(19, 33, 38, 0.18);
+  border-radius: 8px;
+  padding: 7px 8px;
+  font-size: 12px;
+  outline: none;
+  background: #ffffff;
+}
+
+.field input:focus {
+  border-color: rgba(15, 63, 70, 0.5);
+}
+
+.field select:focus {
+  border-color: rgba(15, 63, 70, 0.5);
+}
+
+.btn {
+  border: 1px solid rgba(19, 33, 38, 0.15);
+  border-radius: 10px;
+  padding: 10px 12px;
+  background: #ffffff;
+  color: var(--pv-text);
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 120ms ease, box-shadow 120ms ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 7px 14px rgba(19, 33, 38, 0.14);
+}
+
+.btn.primary {
+  color: #0f3f46;
+  border-color: rgba(15, 63, 70, 0.35);
+  background: linear-gradient(180deg, #fff5e4, #ffe9c5);
+}
+
+.footnote {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 11px;
+  color: rgba(19, 33, 38, 0.65);
+}

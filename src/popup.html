@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gemini Tree</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="popup">
+      <header class="popup-header">
+        <div class="title">Gemini Tree</div>
+        <div class="subtitle">对话关键词摘要</div>
+      </header>
+
+      <section class="status" id="status">准备就绪</section>
+
+      <section class="actions">
+        <button id="toggleBtn" class="btn primary">Show/Hide Float</button>
+        <button id="refreshBtn" class="btn">Refresh Summary</button>
+        <button id="collectBtn" class="btn">Collect Full</button>
+      </section>
+
+      <section class="llm-panel">
+        <label class="field">
+          <span>Analysis Mode</span>
+          <select id="analysisMode">
+            <option value="local">Local Algorithm</option>
+            <option value="llm">LLM API</option>
+          </select>
+        </label>
+
+        <label class="field">
+          <span>Provider</span>
+          <select id="llmProvider">
+            <option value="pollinations">Pollinations Cloud (免配置)</option>
+            <option value="ollama">Local Ollama</option>
+          </select>
+        </label>
+
+        <label class="field">
+          <span>Base URL</span>
+          <input id="llmBaseUrl" type="text" placeholder="https://text.pollinations.ai/openai" />
+        </label>
+
+        <label class="field">
+          <span>Model</span>
+          <input id="llmModel" type="text" placeholder="openai-large" />
+        </label>
+
+        <button id="saveLlmBtn" class="btn">Save LLM Settings</button>
+      </section>
+
+      <footer class="footnote">仅在 Gemini 页面可用</footer>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
