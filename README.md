@@ -2,6 +2,8 @@
 
 一个面向 Edge 浏览器的 MV3 扩展：自动读取 Gemini 对话，将问答摘要为树状结构，并在页面上以可拖拽浮窗展示。
 
+![Gemini Tree 展示图](src\icons\demo.png)
+
 ## 核心功能
 
 - 自动捕获 Gemini 对话并组装为 Q/A 对。
